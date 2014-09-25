@@ -11,7 +11,7 @@ O desenvolvimento da aplicação deve estar sob controle de versão através do 
 Para isso, o candidato deverá realizar um Fork do repositório base do teste (https://github.com/oxenti/teste_programador). A avaliação e entrega da aplicação serão através do Fork do candidato. Só serão considerados commits realizados até o tempo limite. 
 
 Observações 
-
+===========
  
 
 * Os candidatos deverão utilizar como base o framework CakePHP; 
