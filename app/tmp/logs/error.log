@@ -1,0 +1,23 @@
+2014-09-27 04:26:53 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /agenda/teste_programador/users/login
+Stack Trace:
+#0 C:\wamp\www\agenda\teste_programador\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\agenda\teste_programador\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\wamp\www\agenda\teste_programador\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-27 04:29:42 Error: [MissingViewException] View file "C:\wamp\www\agenda\teste_programador\app\View\Users\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\agenda\\teste_programador\\app\\View\\Users\\login.ctp',
+)
+Request URL: /agenda/teste_programador/users/login
+Stack Trace:
+#0 C:\wamp\www\agenda\teste_programador\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\wamp\www\agenda\teste_programador\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\agenda\teste_programador\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\wamp\www\agenda\teste_programador\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\wamp\www\agenda\teste_programador\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
