@@ -15,10 +15,22 @@ class UsersController extends AppController {
  */
 	public $components = array('Paginator');
 	
-	public function login() {
-
-	}
-
+	public function beforeFilter() {
+//            parent::beforeFilter();
+            $this->Auth->allow('add', 'login');
+        }
+        
+        public function login() {
+            if ($this->Auth->login()) {
+                $this->redirect($this->Auth->redirect());
+            } else {
+                $this->Session->setFlash(__('Invalid username or password, try again'));
+            }
+        }
+        
+        public function logout() {
+            $this->redirect($this->Auth->logout());
+        }
 /**
  * index method
  *

@@ -21,3 +21,21 @@ Stack Trace:
 #3 C:\wamp\www\agenda\teste_programador\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #4 C:\wamp\www\agenda\teste_programador\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-09-27 12:35:08 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /agenda/teste_programador/
+Stack Trace:
+#0 C:\wamp\www\agenda\teste_programador\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-27 12:44:15 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /agenda/teste_programador/add
+Stack Trace:
+#0 C:\wamp\www\agenda\teste_programador\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
